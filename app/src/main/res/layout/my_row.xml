@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/masterLayout"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#0c0c0c"
+        android:weightSum="3" >
+
+        <TextView
+            android:id="@+id/idTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:text="TextView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="11dp"
+                android:textSize="31sp"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="10" >
+
+            <TextView
+                android:id="@+id/usernameTextView"
+                android:layout_width="0dp"
+                android:textSize="18sp"
+                android:layout_weight="9"
+                android:layout_gravity="center"
+                android:paddingStart="11dp"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:srcCompat="?attr/actionModeCopyDrawable"
+                android:onClick="copyUsername"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:srcCompat="?attr/actionModeCopyDrawable" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="10" >
+
+            <TextView
+                android:id="@+id/passwordTextView"
+                android:paddingStart="11dp"
+                android:layout_width="0dp"
+                android:textSize="18sp"
+                android:layout_weight="9"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="copyPassword"
+                app:srcCompat="?attr/actionModeCopyDrawable"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                tools:srcCompat="?attr/actionModeCopyDrawable" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
