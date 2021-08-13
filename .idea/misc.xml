@@ -4,11 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidStudioProjects/PasswordSaver/app/src/main/res/drawable/ic_delete.xml" value="0.12314814814814815" />
-        <entry key="..\:/AndroidStudioProjects/PasswordSaver/app/src/main/res/layout/activity_add.xml" value="0.3074074074074074" />
+        <entry key="..\:/AndroidStudioProjects/PasswordSaver/app/src/main/res/drawable/shuffle_background.xml" value="0.3828125" />
+        <entry key="..\:/AndroidStudioProjects/PasswordSaver/app/src/main/res/drawable/shuffle_foreground.xml" value="0.3828125" />
+        <entry key="..\:/AndroidStudioProjects/PasswordSaver/app/src/main/res/layout/activity_add.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidStudioProjects/PasswordSaver/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidStudioProjects/PasswordSaver/app/src/main/res/layout/activity_update.xml" value="0.1" />
-        <entry key="..\:/AndroidStudioProjects/PasswordSaver/app/src/main/res/layout/my_row.xml" value="0.19537037037037036" />
+        <entry key="..\:/AndroidStudioProjects/PasswordSaver/app/src/main/res/layout/my_row.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidStudioProjects/PasswordSaver/app/src/main/res/menu/my_menu.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/PasswordSaver/app/src/main/res/mipmap-anydpi-v26/shuffle.xml" value="0.3828125" />
+        <entry key="..\:/AndroidStudioProjects/PasswordSaver/app/src/main/res/mipmap-anydpi-v26/shuffle_round.xml" value="0.22135416666666666" />
       </map>
     </option>
   </component>
