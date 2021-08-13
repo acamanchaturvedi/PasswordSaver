@@ -1,14 +1,22 @@
 package com.example.passwordsaver;
 
+import static androidx.core.content.ContextCompat.getSystemService;
+import static java.security.AccessController.getContext;
+
 import android.app.Activity;
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
@@ -60,6 +68,27 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             }
         });
 
+        holder.copy_one.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                android.content.ClipboardManager clipboard = (android.content.ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+                android.content.ClipData clip = android.content.ClipData.newPlainText("Copied Text", holder.password_username_text.getText());
+                clipboard.setPrimaryClip(clip);
+
+                Toast.makeText(context, "Username Copied", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        holder.copy_two.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                android.content.ClipboardManager clipboard = (android.content.ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+                android.content.ClipData clip = android.content.ClipData.newPlainText("Copied Text", holder.password_password_text.getText());
+                clipboard.setPrimaryClip(clip);
+
+                Toast.makeText(context, "Password Copied", Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 
@@ -72,6 +101,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
         TextView password_id_text, password_name_text, password_username_text, password_password_text;
         LinearLayout mainLayout;
+        ImageButton copy_one,copy_two;
 
         MyViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -80,6 +110,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             password_username_text = itemView.findViewById(R.id.usernameTextView);
             password_password_text = itemView.findViewById(R.id.passwordTextView);
             mainLayout = itemView.findViewById(R.id.mainLayout);
+            copy_one=itemView.findViewById(R.id.imageButton1);
+            copy_two=itemView.findViewById(R.id.imageButton2);
         }
 
     }

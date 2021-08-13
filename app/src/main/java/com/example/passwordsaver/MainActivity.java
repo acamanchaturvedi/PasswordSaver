@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
         builder.create().show();
     }
 
-    public void copyUsername(View view) {
+/*    public void copyUsername(View view) {
         TextView username=findViewById(R.id.usernameTextView);
         ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
         ClipData clip = ClipData.newPlainText(null, username.getText());
@@ -148,5 +148,6 @@ public class MainActivity extends AppCompatActivity {
         clipboard.setPrimaryClip(clip);
 
         Toast.makeText(this, "Password Copied", Toast.LENGTH_SHORT).show();
-    }
+    }*/
+
 }
